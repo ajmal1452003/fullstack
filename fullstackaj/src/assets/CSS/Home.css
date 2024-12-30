@@ -1,0 +1,15 @@
+.box-model{
+    font-size : 100px;
+    margin:10px;
+    text-align:center;
+    border:12px olive;
+    padding: 5px;
+    height: 77.6vh;
+}
+
+#idSeg{
+    text-align: center;
+}
+.content{
+    background-color: rgb(174, 9, 220);
+}
