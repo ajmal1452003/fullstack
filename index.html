@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
+    <style>
+        
+        form {
+            width: 450px;
+           margin-top: 30px;
+           margin-left: auto;
+           margin-right: auto;
+            height:500px;
+            padding: 20px;
+            border: 1px solid #0fbb68;
+            border-radius: 8px;
+            background-color: #e2e9e0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .info {
+            margin-bottom: 20px;
+        }
+
+        .info input,
+        .info textarea {
+            width: 90%;
+            padding: 8px;
+            margin: 5px auto;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+        }
+
+        button {
+            width: 95%;
+            margin-top: 50px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+       
+        body{
+            background-color: rgba(48, 111, 134, 0.421);
+        }
+    </style>
 </head>
+
 <body>
-    <h1>welcome to full stack</h1>
+
+    <form action="/" method="POST">
+        <h1>Contact Us</h1>
+        <div class="info">
+            <input class="fname" type="text" name="full_name" placeholder="Full name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Phone number" required>
+            <input type="url" name="website" placeholder="Website" required>
+        </div>
+
+        <p>Message</p>
+        <div>
+            <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+    <h1>Thankyou for the feedback.</h1>
+
 </body>
+
 </html>
