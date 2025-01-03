@@ -7,12 +7,14 @@ import About from './Components/FunctionalComponents/About';
 import Gallery from './Components/FunctionalComponents/Gallery';
 import Contact from './Components/FunctionalComponents/Contact';
 import{BrowserRouter,Routes,Route} from 'react-router-dom';
-import Navbar from './Components/FunctionalComponents/Navbar';
+import Navbar from './Components/FunctionalComponents/NavBar';
 import UseEffect from './Components/FunctionalComponents/Useeffecteg';
 import UseEffects from './Components/FunctionalComponents/Useeffect';
 import UseRef from './Components/FunctionalComponents/UseRef';
 import UseRefnum from './Components/FunctionalComponents/UseRefnum';
 import UseContext from './Components/FunctionalComponents/UseContext';
+import PageFiller from './Components/FunctionalComponents/PageFiller';
+import UseMemo from './Components/FunctionalComponents/UseMemo';
 import './App.css';
 function App() {
  return (
@@ -31,6 +33,9 @@ function App() {
       <Route path="/useref" element = {<UseRef/>} />
       <Route path="/userefnum" element = {<UseRefnum/>} />
       <Route path="/usecontext" element = {<UseContext/>} />
+      <Route path="/pagefiller" element = {<PageFiller/>} />
+      <Route path="/usememo" element = {<UseMemo/>} />
+
 
    </Routes>
    </BrowserRouter>
