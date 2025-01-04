@@ -7,7 +7,6 @@ import About from './Components/FunctionalComponents/About';
 import Gallery from './Components/FunctionalComponents/Gallery';
 import Contact from './Components/FunctionalComponents/Contact';
 import{BrowserRouter,Routes,Route} from 'react-router-dom';
-import Navbar from './Components/FunctionalComponents/Navbar';
 import UseEffect from './Components/FunctionalComponents/Useeffecteg';
 import UseEffects from './Components/FunctionalComponents/Useeffect';
 import UseRef from './Components/FunctionalComponents/UseRef';
@@ -18,6 +17,7 @@ import UseMemo from './Components/FunctionalComponents/Usememo';
 import SignUp from './Components/FunctionalComponents/SignUp';
 import Login from './Components/FunctionalComponents/Login';
 import LandingPage from './Components/FunctionalComponents/LandingPage';
+import Navbar from './Components/FunctionalComponents/Navbar'
 import './App.css';
 function App() {
  return (
