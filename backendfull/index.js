@@ -1,12 +1,16 @@
 var express = require('express')
 var path = require('path')
+var cors = require('cors')
 var app = express()
 var mdb = require('mongoose')
-var User = require('./models/users')
-const PORT = 3000
 app.use(express.json())
+var User = require('./models/users.js')
+var env=require('dotenv')
+env.config()
+const PORT = 3000
+app.use(cors())
 
-mdb.connect("mongodb://localhost:27017/kec").then(()=>{
+mdb.connect(process.env.MONGO_URL).then(()=>{
     console.log("Mongodb Connection Successful")
 }).catch(()=>{
     console.log("Check your connection string")
@@ -53,7 +57,7 @@ app.post('/login',async(req,res)=>{
             res.json({message:"Invalid Credentials",isLoggedIn:false})
             }
             else{
-                res.json({message:"Login Successful",isLoggedIn:true})
+                res.json({message:"Login Successful",isLoggedIn:true,user:existingUser.firstName})
             }
             
         }
