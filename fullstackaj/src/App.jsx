@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Nav from './Components/FunctionalComponents/Navbar'
 import Home from './Components/FunctionalComponents/Home';
 import Defaultuse from './Components/FunctionalComponents/Defaultuse';
 import About from './Components/FunctionalComponents/About';
@@ -17,7 +18,6 @@ import UseMemo from './Components/FunctionalComponents/Usememo';
 import SignUp from './Components/FunctionalComponents/SignUp';
 import Login from './Components/FunctionalComponents/Login';
 import LandingPage from './Components/FunctionalComponents/LandingPage';
-import Navbar from './Components/FunctionalComponents/Navbar.jsx'
 import './App.css';
 function App() {
  return (
