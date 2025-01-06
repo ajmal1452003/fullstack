@@ -5,7 +5,7 @@ import axios from "axios";
 var UseEffects =() =>{
     var [post, setPost] = useState([]);
     useEffect(()=>{
-        axios.get("https://jsonplaceholder.typicode.com/posts/")
+        axios.get("https://jsonplaceholder.typicode.com/photos/")
         .then((res)=> {
             console.log(res)
         setPost(res.data)
