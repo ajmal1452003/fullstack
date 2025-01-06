@@ -13,7 +13,7 @@ var SignUp = () => {
 
   var signup = async (event) => {
     event.preventDefault();
-    var req = axios.post("http://127.0.0.1:3000/signup", {
+    var req = axios.post("https://fullstack-qxt8.onrender.com/signup", {
       firstName: FName,
       lastName: LName,
       email: email,

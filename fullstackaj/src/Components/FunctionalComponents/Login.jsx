@@ -12,7 +12,7 @@ var Login = () => {
     event.preventDefault();
     // axios is used to trigger api
     var req = axios
-      .post("http://localhost:3000/login", {
+      .post("https://fullstack-qxt8.onrender.com/login", {
         email: email,
         password: password,
       })
