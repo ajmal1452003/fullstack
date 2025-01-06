@@ -17,7 +17,7 @@ import UseMemo from './Components/FunctionalComponents/Usememo';
 import SignUp from './Components/FunctionalComponents/SignUp';
 import Login from './Components/FunctionalComponents/Login';
 import LandingPage from './Components/FunctionalComponents/LandingPage';
-import Navbar from './Components/FunctionalComponents/Navbar'
+import Navbar from './Components/FunctionalComponents/Navbar.jsx'
 import './App.css';
 function App() {
  return (
