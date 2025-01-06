@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import Nav from './Components/FunctionalComponents/Navbar'
 import Home from './Components/FunctionalComponents/Home';
 import Defaultuse from './Components/FunctionalComponents/Defaultuse';
+import Navb from './Components/FunctionalComponents/Nav';
 import About from './Components/FunctionalComponents/About';
 import Gallery from './Components/FunctionalComponents/Gallery';
 import Contact from './Components/FunctionalComponents/Contact';
@@ -23,7 +23,8 @@ function App() {
  return (
  <div>
    <BrowserRouter>
-   <Navbar/>
+   <Navb/>
+   
 
    <Routes>
 

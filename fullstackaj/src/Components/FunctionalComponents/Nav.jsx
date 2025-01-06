@@ -1,6 +1,6 @@
 import '../../assets/CSS/Navbar.css'
 import { Link } from 'react-router-dom';
-var Nav  =() =>{
+var Navb  =() =>{
     return(
         <header>
             <nav>
@@ -18,5 +18,4 @@ var Nav  =() =>{
 )
 }
 
-export default Nav;
-
+export default Navb;
