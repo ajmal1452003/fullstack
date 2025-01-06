@@ -12,8 +12,8 @@ app.use(cors())
 
 mdb.connect(process.env.MONGO_URL).then(()=>{
     console.log("Mongodb Connection Successful")
-}).catch(()=>{
-    console.log("Check your connection string")
+}).catch((err)=>{
+    console.log("Error",err)
 })
 app.get('/',(req,res)=>{
     res.send("Welcome to Backend Server")
